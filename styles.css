@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Archivo', sans-serif;
+    background: linear-gradient(to bottom, #2D3FFF, #000);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #1e3a8a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+#header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: normal;
+}
+
+#header-contact {
+    background-color: #0418F8;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#main-section, #team, #gallery {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#about-clinic {
+    padding: 40px 20px;
+}
+
+#about-clinic .mission {
+    display: flex;
+    text-align: left;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+#about-clinic .vision {
+    display: flex;
+    text-align: left;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+#about-clinic .mission > div,
+#about-clinic .vision > div {
+    flex: 1;
+}
+
+#about-clinic h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#about-clinic p {
+    max-width: none;
+    margin: 0;
+}
+
+section .hero {
+    text-align: left;
+}
+
+section .hero p {
+    font-weight: 300;
+}
+
+.hero #contact {
+    background-color: #0418F8;
+    color: #fff;
+    font-weight: 500;
+}
+
+.hero #About {
+    background-color: #fff;
+    color: #0418F8;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+button {
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.placeholder {
+    background: #d1d5db;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.mission-image {
+    background-image: url('https://images.pexels.com/photos/3786126/pexels-photo-3786126.jpeg?auto=compress&cs=tinysrgb&w=800');
+}
+
+.vision-image {
+    background-image: url('https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=800');
+}
+
+#team {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team .placeholder {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 10px auto;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member h4 {
+    margin: 15px 0 5px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.team-member .role {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.doctor1 {
+    background-image: url('https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=400');
+}
+
+.doctor2 {
+    background-image: url('https://images.pexels.com/photos/6812522/pexels-photo-6812522.jpeg?auto=compress&cs=tinysrgb&w=400');
+}
+
+.staff1 {
+    background-image: url('https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=400');
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background: #3b82f6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.service-item .placeholder {
+    width: 50px;
+    height: 50px;
+}
+
+/* Gallery Styles */
+#gallery {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.gallery-grid .placeholder {
+    width: 100%;
+    height: 300px;
+    background: #d1d5db;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.gallery-grid .placeholder::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Gallery Images */
+.gallery-grid .placeholder:nth-child(1) {
+    background-image: url('https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=800');
+}
+
+.gallery-grid .placeholder:nth-child(2) {
+    background-image: url('https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg?auto=compress&cs=tinysrgb&w=800');
+}
+
+.gallery-grid .placeholder:nth-child(3) {
+    background-image: url('https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=800');
+}
+
+.gallery-grid .placeholder:nth-child(4) {
+    background-image: url('https://images.pexels.com/photos/4047146/pexels-photo-4047146.jpeg?auto=compress&cs=tinysrgb&w=800');
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #000;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+}
+
+footer {
+    background: #1e3a8a;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #about-clinic .mission,
+    #about-clinic .vision {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .placeholder {
+        width: 100%;
+        max-width: 400px;
+        height: 250px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 400px;
+    }
+
+    .gallery-grid .placeholder {
+        height: 250px;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 40px 0 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header {
+        padding: 15px;
+    }
+
+    #header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #header nav a {
+        margin: 5px;
+    }
+}
