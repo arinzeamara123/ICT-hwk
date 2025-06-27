@@ -60,6 +60,28 @@ body {
     padding: 40px 20px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+#main-section .hero,
+#main-section .placeholder {
+    flex: 1 1 300px;
+    margin: 10px;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    #main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-section .hero,
+    #main-section .placeholder {
+        max-width: 100%;
+        margin: 10px 0;
+    }
 }
 
 /* About clinic section */
@@ -434,12 +456,47 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
-    .service-ref{
-        background: #3b82f6;
-        padding: 20px;
+}
+
+.services-grid .service-ref {
+    background: #3b82f6;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .services-grid .service-ref {
+        margin: 10px auto;
+        max-width: 90%;
+    }
+
+    .services-grid .service-ref img {
+        width: 100%;
+        height: auto;
         border-radius: 10px;
-        text-align: center;
         object-fit: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid .service-ref {
+        margin: 5px auto;
+        max-width: 100%;
+        padding: 15px;
     }
 }
 .placeholder img{
