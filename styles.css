@@ -505,6 +505,7 @@ footer {
     height: 300px;
     border-radius: 10px;
     flex-shrink: 0;
+    object-fit: fill;
     background-size: cover;
     background-position: center;
 }
