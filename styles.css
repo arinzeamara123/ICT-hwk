@@ -427,3 +427,27 @@ footer {
         max-width: 100%;
     }
 }
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    .service-ref{
+        background: #3b82f6;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        object-fit: cover;
+    }
+}
+.placeholder img{
+    background: #d1d5db;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+}
