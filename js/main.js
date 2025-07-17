@@ -5,7 +5,7 @@ function initialisePage() {
 
     navLinks.forEach(navLink => {
         if(navLink.getAttribute("href") === currentPage) {
-            navLink.style.color = "#ADD8E6"
+            navLink.style.color = "#3b82f6"
         }
     })
 }
